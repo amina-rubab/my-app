@@ -29,8 +29,8 @@ jobs:
         node-version: 12 
         
     # Runs a single command using the runners shell
-    - name: Install Yarn
-      uses: borales/actions-yarn@v2.0.0
+    # name: Install Yarn
+    - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: install #will run yarn install command 
 
@@ -38,7 +38,7 @@ jobs:
       run: yarn build kazmishahreactapplication.surge.sh
     
     - name: Install Surge
-      uses: npm install --g surge
+      uses: npm install -g surge
       
     - name: Deploy to Surge
       run: surge ./build kazmishahreactapplication.surge.sh --token ${{secrets.SURGE_TOKEN}}

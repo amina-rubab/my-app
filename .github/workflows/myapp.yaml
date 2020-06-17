@@ -35,7 +35,7 @@ jobs:
         cmd: install #will run yarn install command 
 
     - name: Build React App
-      run: yarn build kazmishahreactapplication.surge.sh
+      run: yarn build
     
     - name: Install Surge
       uses: npm install -g surge

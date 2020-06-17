@@ -41,4 +41,4 @@ jobs:
       uses: npm install --global surge
       
     - name: Run Surge
-      run: surge ./ kazmishahsreactbase2020.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./ kazmishahsfirstreactbase.surge.sh --token ${{secrets.SURGE_TOKEN}}

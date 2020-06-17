@@ -38,7 +38,7 @@ jobs:
       run: yarn build
     
     - name: Install Surge
-      uses: npm install -global surge
+      uses: npm install --global surge
       
     - name: Deploy to Surge
       run: surge ./build kazmishahreactapplication.surge.sh --token ${{secrets.SURGE_TOKEN}}

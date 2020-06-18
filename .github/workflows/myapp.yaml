@@ -32,7 +32,7 @@ jobs:
           cmd: install # will run `yarn install` command
           
     - name: build
-      uses: yarn build
+      run: yarn build
     
     - name: Install Surge
       uses: npm install --global surge

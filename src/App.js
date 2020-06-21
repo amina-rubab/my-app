@@ -3,7 +3,7 @@ import './App.css';
 import Hello from './Hello';
 
 function App({name, age}) {
-return <div> hello from app.js<strong> {name}</strong> age = {age - 8}
+return <div> hello from app.js<strong> {name}</strong> age = {age - 9}
 <br/>
 <h2>An Unordered HTML List</h2>
 
